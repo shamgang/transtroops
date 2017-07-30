@@ -140,12 +140,13 @@ h1 {
 
 @media (min-width: 1300px) {
     .background {
-        top: 0; /* nudge the sign back down */
+        top: -2vw; /* nudge the sign back down */
     }
 }
 
 @media (min-width: 1500px) {
     .background {
-        bottom: -5vw; /* nudge the sign down further */
+        top: 0vw;
+        bottom: -3vw; /* nudge the sign down further */
     }
 }
