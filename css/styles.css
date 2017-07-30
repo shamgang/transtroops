@@ -1,0 +1,151 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Full-size fixed background image for layered scroll effect */
+.background {
+    background-image: url('/img/all_troops.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: -5vw; /* nudge the sign up a little */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* send to back */
+}
+
+/* Bottom-right image credit */
+.background-credit {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0.5em;
+    font-family: Verdana, Geneva, sans-serif;
+    color: white;
+    font-size: 0.5rem;
+    font-weight: lighter;
+    z-index: -1; /* send to back */
+}
+
+/* Main scroll container */
+.main-content {
+    z-index: 0;
+}
+
+/* Empty splash to showcase background image in the splash */
+.splash {
+    height: 60vh;
+}
+
+/* Full-width content background */
+.banner {
+    background-color: #E8E0F6; /* color picked from paper sign in background */
+    width: 100%;
+    padding: 2em 0;
+    margin: 5em 0;
+    box-shadow: 0 0 1em grey;
+}
+
+/* Centered content container */
+.content-block {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    margin-bottom: 1em;
+}
+
+/* Image container */
+.image-block {
+    width: 100%;
+    margin: 1em 0;
+}
+
+.image-block img {
+    width: 100%;
+    box-shadow: 0 0 1em grey;
+}
+
+.image-credit {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 0.5rem;
+    font-weight: lighter;
+    width: 100%;
+    text-align: left;
+}
+
+/* Main copy container */
+.message {
+    font-size: 1.2rem;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: lighter;
+}
+
+.message p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.5em 0;
+}
+
+.twitter-tweet {
+    margin: 0 auto; /* center */
+}
+
+@media (max-width: 800px) {
+    body {
+        background-color: #E8E0F6; /* match banner */
+    }
+    /* Layered scroll isn't great at small sizes, hide background image */
+    .background {
+        display: none;
+    }
+    /* Hide background credit as well */
+    .background-credit {
+        display: none;
+    }
+    /* Remove splash */
+    .splash {
+        height: 0;
+    }
+    .main-content {
+        /* Action Network widget overflows width at small sizes */
+        overflow: hidden;
+        padding: 1em 0;
+    }
+    .banner {
+        padding: 0.25em 0;
+        margin: 0;
+        box-shadow: 0 0 0; /* remove box shadow */
+    }
+    .content-block {
+        width: 95%;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    .message {
+        font-size: 0.9rem;
+    }
+    .message p {
+        width: 85%;
+        padding: 0.5em 0;
+    }
+}
+
+@media (min-width: 1300px) {
+    .background {
+        top: 0; /* nudge the sign back down */
+    }
+}
+
+@media (min-width: 1500px) {
+    .background {
+        bottom: -5vw; /* nudge the sign down further */
+    }
+}
