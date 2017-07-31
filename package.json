@@ -1,0 +1,22 @@
+{
+  "name": "transtroops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shamgang/transtroops.git"
+  },
+  "author": "Shamik Ganguly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shamgang/transtroops/issues"
+  },
+  "homepage": "https://github.com/shamgang/transtroops#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

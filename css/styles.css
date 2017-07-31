@@ -6,7 +6,7 @@
 
 /* Full-size fixed background image for layered scroll effect */
 .background {
-    background-image: url('./img/all_troops.jpeg');
+    background-image: url('/img/all_troops.jpeg');
     background-size: cover;
     background-position: center;
     position: fixed;
